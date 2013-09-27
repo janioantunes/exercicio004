@@ -78,13 +78,24 @@ Janio Luiz Antunes
 		</style>
 	</head>
 
+<<<<<<< HEAD
 	<!--<body onload="checkDB()">-->
 	<body onload="onLoad()">
 		<div data-role="page" id="principal">
+=======
+	<body onload="checkConnection()">
+		<div data-role="page">
+>>>>>>> a7b2a2a63c6ebbc66857331d36ca682bd74d52e7
 
 			<!--Cabeçalho-->
 			<div data-role="header">
-				<p id="deviceProperties">Loading device properties...</p>
+				<h1>Boteko's</h1>
+				<a href="#deviceinfo" data-role="button" data-rel="popup">Info</a>
+				<div data-role="deviceinfo" id="popupBasic">
+					<div style="padding:10px 20px;">
+						<p id="deviceProperties"></p>
+					</div>
+				</div>
 			</div>
 
 			<!--Conteúdo-->
@@ -106,7 +117,7 @@ Janio Luiz Antunes
 									<select name="selCliente" id="selCliente" onchange="PassaValor();">
 										<option selected>Cliente</option>
 									</select>
-								
+									
 									<a href="#popupBasic" data-role="button" data-rel="popup" style="width:18%; float: right;
 margin-right: -67px; margin-top: -43px;">+</a> 
 									<div data-role="popup" id="popupBasic">
@@ -162,6 +173,7 @@ margin-right: -67px; margin-top: -43px;">+</a>
 			<div data-role="footer" data-position="fixed">
 				<h1>Janio L. Antunes</h1>
 			</div>
+
 		</div>
 
 		<!--Página de fotos-->
